@@ -52,4 +52,4 @@
 |22.07.31.|OT||
 |22.08.01.~22.08.08.|팀별 활동 진행||
 |22.08.05.|중간 점검 미션 (발표X)||
-|22.08.08.|최종 발표||[다시보기](https://www.youtube.com/watch?v=zp6tgkpNn8U)|
+|22.08.08.|최종 발표|[다시보기](https://www.youtube.com/watch?v=zp6tgkpNn8U)|
