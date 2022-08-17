@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>사진 등록하기</title>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <h1>사진 등록하기</h1>
+        </div>
+		<hr>
+        <div class="page-body">
+            <form method="POST" enctype="multipart/form-data" action="{{ url_for('upload_done') }}">
+                <div id="upload_photo">
+                    <p><strong>사진</strong> 등록</p>
+                    <input type="file" name="file" required/>
+                </div>
+                <div id="submit">
+                    <p><strong>사진</strong> 제출</p>               
+                    <input type="submit"/>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

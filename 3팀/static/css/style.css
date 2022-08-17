@@ -1,0 +1,184 @@
+body {
+  line-height: 1;
+}
+
+body {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans KR", serif;
+  font-weight: 700;
+  text-align: left;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 10px;
+}
+
+p {
+  font-family: "Noto Sans KR", serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+}
+
+strong {
+  color: #409d00;
+  font-weight: 700;
+}
+
+a {
+  color: #00939d;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9d9300;
+}
+
+img {
+  width: 70%;
+  height: auto;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#next-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#submit {
+  display: flex;
+  flex-direction: column;
+}
+
+#next-page button,
+#submit input {
+  width: 180px;
+  height: 50px;
+  background-color: #00939d;
+  font-size: 15px;
+  color: aliceblue;
+  border-radius: 15px;
+}
+
+#image {
+  display: flex;
+  justify-content: center;
+}
+
+#contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+#login input {
+  width: 80%;
+  height: 50px;
+  border: none;
+}
+
+#login input:active,
+#login input:hover {
+  border-bottom: #409d00 3px solid;
+}
+
+#login button {
+  margin-top: 25px;
+  width: 150px;
+  height: 50px;
+  background-color: #409d00;
+  font-size: 15px;
+  border-radius: 15px;
+}
+
+#login button:hover {
+  background-color: #00939d;
+}
+
+.after_login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.after_login a {
+  margin: 25px 0px;
+  font-size: 25px;
+}
+
+.emotion-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emotion_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emotion_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: black 1px solid;
+}

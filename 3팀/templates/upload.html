@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>일기 등록하기</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <h1>일기 등록하기</h1>
+        </div>
+        <hr>
+        <div class="page-body">
+            <form action="/upload_photo" method="get">
+                <div id="diary_date">
+                    <p><strong>날짜</strong>를 입력하세요</p>
+                    <input name="date" type="date" required>
+                </div>
+                <div id="diary_title">
+                    <p>일기의 <strong>제목</strong>을 입력하세요</p>
+                    <input name="title" placeholder="제목을 입력하세요" required>
+                </div>
+                <div id="diary_feeling">
+                    <p>오늘의 <strong>기분</strong>을 입력하세요</p>
+                    <h6>나쁨 <input name="feeling" type="range" max="10" min="0" step="1" value="5" required> 좋음</h6>
+                </div>
+                <div id="diary_contents">
+                    <p>일기의 <strong>내용</strong>을 입력하세요</p>
+                    <textarea name="contents" placeholder="일기의 내용" cols="45" rows="10" required></textarea>
+                </div>
+                <div id="next-page">
+                    <button>사진 이어서 입력하기</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

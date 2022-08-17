@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>emotion-data</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='css/style.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="emotion-body">
+    <header class="emotion_header">
+      <h1>총 기분 데이터 분석</h1>
+    </header>
+
+    <main class="emotion_main">
+      <p>기록된 기분 데이터를 바탕으로 평균을 계산했습니다 : {{avg}}</p>
+      {% if mood == "good" %}
+      <p>요즘 당신은 기분이 좋군요!</p>
+      {% elif mood == "soso" %}
+      <p>당신은 평범한 날을 보내고 있군요!</p>
+      {%else %}
+      <p>괜찮아요...? 요즘 힘든 일 있어요?</p>
+      {%endif        %}
+    </main>
+
+    <p><a href={{url_for("main")}}>홈으로 돌아가기</a></p>
+  </body>
+</html>
